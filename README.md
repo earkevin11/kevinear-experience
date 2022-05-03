@@ -1,4 +1,4 @@
-<h1>Hi, I'm Kevin! <br/><a href="https://www.linkedin.com/in/kevin-ear/">Cybersecurity Professional</a>, <a> Cloud Security Engineer <a>,<a> Python Programmer</a>,</h1>
+<h1>Hi, I'm Kevin! <br/><a href="https://www.linkedin.com/in/kevin-ear/">Cybersecurity Professional</a>, <a> Cloud Security Engineer <a>,<a> Python Programmer</a></h1>
 
 <h2>👨‍💻 Cybersecurity Projects </h2>
 
