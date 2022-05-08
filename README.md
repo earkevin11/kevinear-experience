@@ -10,6 +10,8 @@
   - [Income Tax Calculator](https://github.com/earkevin11/python-projects)
   - [Active Directory Bulk User Creation](https://github.com/joshmadakor1/AD_PS)
   - [FIM (File Integrity Monitor)](https://github.com/joshmadakor1/PowerShell-Integrity-FIM)
+- <b>Networking </b>
+  - Cisco Certified Networking Associate Notes
   
 <h2>📺 Certifications and Training </h2>
   
@@ -22,7 +24,6 @@
 
 <h2>📺 Cybersecurity Blog </h2>
 
-<h2>📺 Cisco Certified Networking Associate Notes </h2>
  
  <h2> 🤳 Connect with me:</h2>
 
