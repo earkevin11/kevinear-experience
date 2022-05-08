@@ -3,7 +3,7 @@
 <h2>👨‍💻 Cybersecurity Projects </h2>
 
 - <b>Azure Cloud Security Technologies</b>
-  - [Praciting DS & Algos in Python](https://github.com/joshmadakor1/Algorithms-Practice)
+  - [AZ-500 Notes](https://github.com/earkevin11/Azure-Security-Technologies)
 - <b>Python</b>
   - [Income Tax Calculator](https://github.com/earkevin11/python-projects)
   - [Active Directory Bulk User Creation](https://github.com/joshmadakor1/AD_PS)
