@@ -17,6 +17,9 @@
   - <b>[AZ-900: Azure Fundamentals](https://www.credly.com/badges/9e17493d-8df3-411f-9f96-3707e1b32ef6) </b>
   
   - <b>[AZ-500: Azure Security Technologies](https://www.credly.com/badges/9e17493d-8df3-411f-9f96-3707e1b32ef6) </b>
+  
+  - <b>[AZ-104: Microsoft Azure Administrator]</b>
+  
  
 
 <h2>📺 Cybersecurity Blog </h2>
