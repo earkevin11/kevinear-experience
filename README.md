@@ -1,6 +1,6 @@
 <h1>Hi, I'm Kevin! <br/><a href="https://www.linkedin.com/in/kevin-ear/">Cybersecurity Professional</a>, <a> Cloud Security Engineer<a>, <a>Python</a></h1>
 
-<h2>👨‍💻 Cybersecurity Projects </h2>
+<h2>👨‍💻 IT Notes </h2>
 
 - <b>Azure Cloud Security Technologies</b>
   - [AZ-500 Notes](https://github.com/earkevin11/Azure-Security-Technologies)
@@ -8,7 +8,7 @@
   - [Income Tax Calculator](https://github.com/earkevin11/python-projects)
   - [Active Directory Bulk User Creation](https://github.com/joshmadakor1/AD_PS)
 - <b>Networking </b>
-  - Cisco Certified Networking Associate Notes
+  - [Cisco Certified Networking Associate Notes](https://github.com/earkevin11/CCNA-Notes)
   
 <h2>📺 Certifications and Training </h2>
   
