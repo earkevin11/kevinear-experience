@@ -4,12 +4,13 @@
 
 - <b>Azure Cloud Security Technologies</b>
   - [AZ-500 Notes](https://github.com/earkevin11/Azure-Security-Technologies)
-- <b>Python</b>
-  - [Income Tax Calculator](https://github.com/earkevin11/python-projects)
-  - [Active Directory Bulk User Creation](https://github.com/joshmadakor1/AD_PS)
 - <b>Networking </b>
   - [Cisco Certified Networking Associate Notes](https://github.com/earkevin11/CCNA-Notes)
+- <b>Linux</b>
+  - [Linux Notes]()
   
+  
+
 <h2>📺 Certifications and Training </h2>
   
   - <b>[CompTIA Security+](https://www.credly.com/badges/5ca58ace-fda1-4e86-b83f-9e4aae9e3191?source=linked_in_profile)</b>
@@ -19,6 +20,17 @@
   - <b>[AZ-500: Azure Security Technologies](https://www.credly.com/badges/9e17493d-8df3-411f-9f96-3707e1b32ef6) </b>
   
   - <b>[AZ-104: Microsoft Azure Administrator]</b>
+  
+<h2> ⚡ Projects </h2>
+  
+- <b>Python</b> 
+  - [Income Tax Calculator]() 
+  
+- <b> Cloud Resume Challenge </b>
+  - [Clouse Resume Challenge]()
+  
+- <b>Active Directory </b> 
+  - [AD Bulk Creation]()
   
  
 
