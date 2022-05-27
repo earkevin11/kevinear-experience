@@ -21,6 +21,8 @@
   
   - <b>[AZ-104: Microsoft Azure Administrator]</b>
   
+  - <b>[AZ-700: Microsoft Azure Networking Associate]
+  
 <h2> ⚡ Projects </h2>
   
 - <b>Python</b> 
