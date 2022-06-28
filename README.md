@@ -8,7 +8,7 @@
   - [Cisco Certified Networking Associate Notes](https://github.com/earkevin11/CCNA-Notes)
 - <b>Linux</b>
   - [Linux Notes]()
--  [Windows Server 2016]((https://github.com/earkevin11/Windows-Server-2016))
+-  <b> [Windows Server 2016]((https://github.com/earkevin11/Windows-Server-2016) </b>
   
   
 
