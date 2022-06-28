@@ -19,7 +19,7 @@
   
   - <b>[AZ-500: Azure Security Technologies](https://www.credly.com/badges/9e17493d-8df3-411f-9f96-3707e1b32ef6) </b>
   
-  - <b>[AZ-104: Microsoft Azure Administrator]</b>
+  - <b>[AZ-104: Microsoft Azure Administrator]</b>(https://github.com/earkevin11/Windows-Server-2016)
   
   - <b>[AZ-700: Microsoft Azure Networking Associate]
   
