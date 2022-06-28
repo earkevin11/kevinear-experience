@@ -8,6 +8,7 @@
   - [Cisco Certified Networking Associate Notes](https://github.com/earkevin11/CCNA-Notes)
 - <b>Linux</b>
   - [Linux Notes]()
+-  [Windows Server 2016]((https://github.com/earkevin11/Windows-Server-2016))
   
   
 
@@ -19,7 +20,7 @@
   
   - <b>[AZ-500: Azure Security Technologies](https://www.credly.com/badges/9e17493d-8df3-411f-9f96-3707e1b32ef6) </b>
   
-  - <b>[AZ-104: Microsoft Azure Administrator](https://github.com/earkevin11/Windows-Server-2016)</b>
+  - <b>[AZ-104: Microsoft Azure Administrator]</b>
   
   - <b>[AZ-700: Microsoft Azure Networking Associate]
   
