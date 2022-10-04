@@ -1,4 +1,4 @@
-<h1>Hi, I'm Kevin! <br/><a>Security Professional</a>,<a> Azure Cloud Security Engineer<a>,<a> Python Programmer</a></h1>
+<h1>Hi, I'm Kevin! <br/><a>Security and Azure Professional</a>,<a> Python Developer</a></h1>
 
 <h2>👨‍💻 IT Notes </h2>
 
