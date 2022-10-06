@@ -3,7 +3,7 @@
 <h2>👨‍💻 IT Notes </h2>
 
 - <b>Azure Cloud Security Technologies</b>
-  - [AZ-500 Notes](https://github.com/earkevin11/Azure-Security-Technologies)
+  - [Azure Seucurity Technology](https://github.com/earkevin11/Azure-Security-Technologies)
 - <b>Networking </b>
   - [Cisco Certified Networking Associate Notes](https://github.com/earkevin11/CCNA-Notes)
 - <b>Linux</b>
