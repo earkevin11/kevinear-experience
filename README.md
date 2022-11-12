@@ -21,25 +21,10 @@
   
   - <b>[AZ-500: Azure Security Technologies](https://www.credly.com/badges/9e17493d-8df3-411f-9f96-3707e1b32ef6) </b>
   
-  - <b>[AZ-104: Microsoft Azure Administrator]</b>
-  
-  - <b>[CCNA]
-  
 <h2> ⚡ Projects </h2>
   
 - <b>Python</b> 
   - [Income Tax Calculator]() 
-  
-- <b> Cloud Resume Challenge </b>
-  - [Clouse Resume Challenge]()
-  
-- <b>Active Directory </b> 
-  - [AD Bulk Creation]()
-  
- 
-
-<h2>📺 Cybersecurity Blog </h2>
-
  
 <h2> 🔭 Spanish Resources </h2>
 
