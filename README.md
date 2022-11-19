@@ -24,7 +24,7 @@
 <h2> ⚡ Projects </h2>
   
 - <b>Python</b> 
-  - [Income Tax Calculator]() 
+  - [Password Manager with GUI]() 
  
 <h2> 🔭 Spanish Resources </h2>
 
