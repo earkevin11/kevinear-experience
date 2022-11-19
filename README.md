@@ -24,7 +24,7 @@
 <h2> ⚡ Projects </h2>
   
 - <b>Python</b> 
-  - [Password Manager with GUI](https://github.com/earkevin11/kevinear-experience/commit/0c8d8cce2936f5f4f57b01793444b9b72b3c7599) 
+  - [NN]
  
 <h2> 🔭 Spanish Resources </h2>
 
