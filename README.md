@@ -1,4 +1,4 @@
-<h1>Hi, I'm Kevin! <br/><a>Cybersecurity Professional</a>,<a> Cloud Security Engineer, <a> Python Developer</a></h1>
+<h1>Hi, I'm Kevin! <br/><a>Cybersecurity Professional</a>,<a> Cloud Security Engineer, <a> Software Engineer </a></h1>
 
 <h2>👨‍💻 IT Notes </h2>
 
