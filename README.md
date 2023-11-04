@@ -19,7 +19,7 @@
   
   - <b>[AZ-900: Azure Fundamentals](https://www.credly.com/badges/9e17493d-8df3-411f-9f96-3707e1b32ef6) </b>
   
-  - <b>[AZ-500: Azure Security Technologies](https://www.credly.com/badges/9e17493d-8df3-411f-9f96-3707e1b32ef6) </b>
+  - <b>[AZ-500: Azure Security Technologies](https://learn.microsoft.com/api/credentials/share/en-us/KevinEar-2742/8C273DE4AB982FA4?sharingId=F07ADFC78BE53963)) </b>
   
 <h2> ⚡ Projects </h2>
   
