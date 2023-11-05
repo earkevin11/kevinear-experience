@@ -4,6 +4,8 @@
 
 - <b>Azure Cloud Security Technologies</b>
   - [Azure Security Technology](https://github.com/earkevin11/Azure-Security-Technologies)
+- <b>SC-100: Microsoft Cybersecurity Architecture</b>
+  - [Azure Cybersecurity Architecture]()
 - <b>Networking </b>
   - [Cisco Certified Networking Associate Notes](https://github.com/earkevin11/CCNA-Notes)
 - <b>Linux</b>
