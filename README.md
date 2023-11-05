@@ -8,8 +8,6 @@
   - [Azure Cybersecurity Architecture]()
 - <b>Networking </b>
   - [Cisco Certified Networking Associate Notes](https://github.com/earkevin11/CCNA-Notes)
-- <b>Linux</b>
-  - [Linux Notes]()
 - <b>Windows Server 2016</b>
   - [Windows Server 2016 Notes](https://github.com/earkevin11/Windows-Server-2016)
   
