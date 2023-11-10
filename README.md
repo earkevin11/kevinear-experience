@@ -6,8 +6,8 @@
   - [Azure Security Technology](https://github.com/earkevin11/Azure-Security-Technologies)
 - <b>SC-100: Microsoft Cybersecurity Architect</b>
   - [Azure Cybersecurity Architecture]()
-- <b>Networking </b>
-  - [Cisco Certified Networking Associate Notes](https://github.com/earkevin11/CCNA-Notes)
+- <b>Data Structures & Algorithm </b>
+  - [DSA Practice](https://github.com/earkevin11/CCNA-Notes)
 - <b>Windows Server 2016</b>
   - [Windows Server 2016 Notes](https://github.com/earkevin11/Windows-Server-2016)
   
@@ -21,7 +21,7 @@
   
   - <b>[AZ-500: Azure Security Technologies](https://learn.microsoft.com/api/credentials/share/en-us/KevinEar-2742/8C273DE4AB982FA4?sharingId=F07ADFC78BE53963) </b>
   
-<h2> ⚡ Projects </h2>
+<h2> ⚡ Full Stack Projects </h2>
   
 - <b>Python</b> 
   - [Password Manager](https://github.com/earkevin11/Password-Manager-with-GUI)
