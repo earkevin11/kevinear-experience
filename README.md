@@ -1,13 +1,11 @@
 <h1>Hi, I'm Kevin! <br/><a>Cybersecurity Professional</a>,<a> Cloud Security Engineer, <a> Software Engineer </a></h1>
 
-<h2>👨‍💻 IT Notes </h2>
+<h2>👨‍💻 Cybersecurity and IT Notes </h2>
 
 - <b>Azure Cloud Security Technologies</b>
   - [Azure Security Technology](https://github.com/earkevin11/Azure-Security-Technologies)
 - <b>SC-100: Microsoft Cybersecurity Architect</b>
   - [Azure Cybersecurity Architecture]()
-- <b>Data Structures & Algorithm </b>
-  - [DSA Practice](https://github.com/earkevin11/CCNA-Notes)
 - <b>Windows Server 2016</b>
   - [Windows Server 2016 Notes](https://github.com/earkevin11/Windows-Server-2016)
   
@@ -21,10 +19,18 @@
   
   - <b>[AZ-500: Azure Security Technologies](https://learn.microsoft.com/api/credentials/share/en-us/KevinEar-2742/8C273DE4AB982FA4?sharingId=F07ADFC78BE53963) </b>
   
-<h2> ⚡ Full Stack Projects </h2>
+<h2> ⚡ Software Development Projects </h2>
+
+- <b>Data Structures & Algorithm Practice </b>
+  - [DS & Algorithm Practice in Python](https://github.com/earkevin11/CCNA-Notes)
   
 - <b>Python</b> 
   - [Password Manager](https://github.com/earkevin11/Password-Manager-with-GUI)
+ 
+- <b>Javascript</b>
+
+
+- <b>Java</b>
  
 <h2> 🔭 Spanish Resources </h2>
 
