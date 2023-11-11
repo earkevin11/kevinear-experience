@@ -2,7 +2,7 @@
 
 <h2>👨‍💻 Cybersecurity and IT Notes </h2>
 
-- <b>Azure Cloud Security Technologies</b>
+- <b>AZ-500: Microsoft Certified: Azure Security Engineer Associate</b>
   - [Azure Security Technology](https://github.com/earkevin11/Azure-Security-Technologies)
 - <b>SC-100: Microsoft Cybersecurity Architect</b>
   - [Azure Cybersecurity Architecture]()
