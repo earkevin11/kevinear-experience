@@ -25,8 +25,9 @@
   - [DS & Algorithm Practice in Python](https://github.com/earkevin11/CCNA-Notes)
   
 - <b>Python</b> 
-  - [Password Manager](https://github.com/earkevin11/Password-Manager-with-GUI)
-  - [Exercise Tracker using Natural Language Processing (NLP)](https://github.com/earkevin11/Password-Manager-with-GUI)
+  - [Pomodoro](https://github.com/earkevin11/Pomodoro)
+  - [Exercise Tracker using Natural Language Processing (NLP)](https://github.com/earkevin11/ExerciseTracker_NLP)
+  - [Income Tax Calculator](https://github.com/earkevin11/IncomeTaxCalculator)
  
 - <b>Javascript</b>
 
