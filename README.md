@@ -26,6 +26,7 @@
   
 - <b>Python</b> 
   - [Password Manager](https://github.com/earkevin11/Password-Manager-with-GUI)
+  - [Exercise Tracker using Natural Language Processing (NLP)](https://github.com/earkevin11/Password-Manager-with-GUI)
  
 - <b>Javascript</b>
 
