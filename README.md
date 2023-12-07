@@ -21,7 +21,7 @@
   
   - <b>[AZ-500: Azure Security Technologies](https://learn.microsoft.com/api/credentials/share/en-us/KevinEar-2742/8C273DE4AB982FA4?sharingId=F07ADFC78BE53963) </b>
 
-  - <b>[Information Technology Diagrams](https://learn.microsoft.com/api/credentials/share/en-us/KevinEar-2742/8C273DE4AB982FA4?sharingId=F07ADFC78BE53963) </b>
+
   
 <h2> ⚡ Software Development Projects </h2>
 
