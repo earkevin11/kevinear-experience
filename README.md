@@ -26,7 +26,7 @@
 <h2> ⚡ Software Development Projects </h2>
 
 - <b>Data Structures & Algorithm Practice </b>
-  - [DSA in C#](https://github.com/earkevin11/CCNA-Notes)
+  - [DSA in C#]()
   
 - <b>Python</b> 
   - [Pomodoro](https://github.com/earkevin11/Pomodoro)
