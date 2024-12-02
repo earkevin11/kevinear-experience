@@ -1,4 +1,5 @@
-<h1>Hi, I'm Kevin! <br/><a>Cybersecurity Professional with experience in Cloud Security and Software Development </a>,<a> </h1>
+<h1>Hi, I'm Kevin! <br/><a>Cybersecurity Professional </a>
+  with experience in Cloud Security and Software Development</h1>
 
 <h2>👨‍💻 Cybersecurity and IT Notes </h2>
 
