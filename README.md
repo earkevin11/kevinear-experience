@@ -38,7 +38,7 @@
 
 
 - <b>React</b>
-  - [Travel List](https://github.com/earkevin11/React-Travel-List)
+  - [Travel List](https://github.com/earkevin11/React-05-travel-list)
  
 <h2> 🔭 Spanish Resources </h2>
 
