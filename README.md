@@ -5,6 +5,8 @@
 
 - <b>AZ-500: Microsoft Certified: Azure Security Engineer Associate</b>
   - [Azure Security Technology](https://github.com/earkevin11/Azure-Security-Technologies)
+- <b>AWS Security Specialty</b>
+- <b>AWS Certified Developer </b>
 - <b>SC-100: Microsoft Cybersecurity Architect</b>
   - [Azure Cybersecurity Architecture]()
 - <b>Windows Server 2016</b>
