@@ -34,12 +34,10 @@
   - [Pomodoro](https://github.com/earkevin11/Pomodoro)
   - [Exercise Tracker using Natural Language Processing (NLP)](https://github.com/earkevin11/ExerciseTracker_NLP)
   - [Income Tax Calculator](https://github.com/earkevin11/IncomeTaxCalculator)
- 
-- <b>Javascript</b>
-
 
 - <b>React</b>
   - [Travel List](https://github.com/earkevin11/React-05-travel-list)
+  - [Bill Split Application](https://github.com/earkevin11/06-eat-n-split)
  
 <h2> 🔭 Spanish Resources </h2>
 
