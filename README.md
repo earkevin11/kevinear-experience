@@ -1,6 +1,17 @@
 <h1>Hi, I'm Kevin! <br/><a>Cybersecurity Professional </a>
   with experience in Cloud Security (Azure & AWS) and Frontend Development (React)</h1>
 
+  <h2> ⚡ Software Development Projects </h2>
+  
+- <b>Python</b> 
+  - [Pomodoro](https://github.com/earkevin11/Pomodoro)
+  - [Exercise Tracker using Natural Language Processing (NLP)](https://github.com/earkevin11/ExerciseTracker_NLP)
+  - [Income Tax Calculator](https://github.com/earkevin11/IncomeTaxCalculator)
+
+- <b>React</b>
+  - [Travel List](https://github.com/earkevin11/React-05-travel-list)
+  - [Bill Split Application](https://github.com/earkevin11/06-eat-n-split)
+
 <h2>👨‍💻 Cybersecurity and IT Notes </h2>
 
 - <b>AZ-500: Microsoft Certified: Azure Security Engineer Associate</b>
@@ -25,19 +36,7 @@
 
 
   
-<h2> ⚡ Software Development Projects </h2>
 
-- <b>Data Structures & Algorithm Practice </b>
-  - [DSA in C#]()
-  
-- <b>Python</b> 
-  - [Pomodoro](https://github.com/earkevin11/Pomodoro)
-  - [Exercise Tracker using Natural Language Processing (NLP)](https://github.com/earkevin11/ExerciseTracker_NLP)
-  - [Income Tax Calculator](https://github.com/earkevin11/IncomeTaxCalculator)
-
-- <b>React</b>
-  - [Travel List](https://github.com/earkevin11/React-05-travel-list)
-  - [Bill Split Application](https://github.com/earkevin11/06-eat-n-split)
  
 <h2> 🔭 Spanish Resources </h2>
 
