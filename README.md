@@ -1,4 +1,4 @@
-<h1>Hi, I'm Kevin! <br/><a>Cybersecurity Professional </a>
+<br/><a>Cybersecurity Professional </a>
   with experience in Cloud Security (Azure & AWS) and Frontend Development (React)</h1>
 
   <h2> ⚡ Software Development Projects </h2>
