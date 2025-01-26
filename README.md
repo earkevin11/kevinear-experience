@@ -1,5 +1,5 @@
-<br/><a>Cybersecurity Professional </a>
-  with experience in Cloud Security (Azure & AWS) and Frontend Development (React)</h1>
+<h1><a>Cybersecurity Professional </a> 
+<br> - Cloud Security (Azure & AWS) and Frontend Development (React)</h1>br></h1>
 
   <h2> ⚡ Software Development Projects </h2>
   
