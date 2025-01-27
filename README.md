@@ -1,5 +1,5 @@
 <h1><a>Cybersecurity Professional </a> 
-<br> - Cloud Security (Azure & AWS) and Frontend Development (React)</h1>br></h1>
+<br> - Cloud Security (Azure & AWS) and Frontend Development (React)</br></h1>
 
   <h2> ⚡ Software Development Projects </h2>
   
@@ -15,8 +15,9 @@
 <h2>👨‍💻 Cybersecurity and IT Notes </h2>
 
 - <b>AZ-500: Microsoft Certified: Azure Security Engineer Associate</b>
-  - [Azure Security Technology](https://github.com/earkevin11/Azure-Security-Technologies)
-- <b>AWS Certified Developer Associate DVA-C02 - In Progress</b>
+  - [Azure Security Technologies](https://github.com/earkevin11/Azure-Security-Technologies)
+- <b>AZ-204: Azure Developer Associate: Developing solutions using Azure </b>
+- <b>AWS Security Technologies - In Progress</b>
 - <b>SC-100: Microsoft Cybersecurity Architect</b>
   - [Azure Cybersecurity Architecture]()
 - <b>Windows Server 2016</b>
