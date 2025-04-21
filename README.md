@@ -18,8 +18,6 @@
   - [Azure Security Technologies](https://github.com/earkevin11/Azure-Security-Technologies)
 - <b>AZ-204: Azure Developer Associate: Developing solutions using Azure </b>
 - <b>AWS Security Technologies - In Progress</b>
-- <b>SC-100: Microsoft Cybersecurity Architect</b>
-  - [Azure Cybersecurity Architecture]()
 - <b>Windows Server 2016</b>
   - [Windows Server 2016 Notes](https://github.com/earkevin11/Windows-Server-2016)
 - <b> Informational Technology Diagrams </b>
