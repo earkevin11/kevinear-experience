@@ -22,6 +22,8 @@
   - [Windows Server 2016 Notes](https://github.com/earkevin11/Windows-Server-2016)
 - <b> Informational Technology Diagrams </b>
   - [IT Diagrams](https://github.com/earkevin11/IT-Diagrams/blob/main/README.md)
+- <b> Kubernetes Crash Course </b>
+- [Learning about Kubernetes](https://github.com/earkevin11/Kubernetes-Crash-Course)
   
   
 
