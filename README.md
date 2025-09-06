@@ -23,7 +23,7 @@
 - <b> Informational Technology Diagrams </b>
   - [IT Diagrams](https://github.com/earkevin11/IT-Diagrams/blob/main/README.md)
 - <b> Kubernetes Crash Course </b>
-- [Learning about Kubernetes](https://github.com/earkevin11/Kubernetes-Crash-Course)
+  - [Learning about Kubernetes](https://github.com/earkevin11/Kubernetes-Crash-Course)
   
   
 
