@@ -16,7 +16,7 @@
 
 - <b>AZ-500: Microsoft Certified: Azure Security Engineer Associate</b>
   - [Azure Security Technologies](https://github.com/earkevin11/Azure-Security-Technologies)
-- <b>AZ-204: Azure Developer Associate: Developing solutions using Azure </b>
+- <b>AWS Solutions Architect</b>
 - <b>AWS Security Specialty</b>
   - [AWS Security](https://github.com/earkevin11/AWS-Security-Specialty)
   - [AWS vs Azure cheat sheet](https://bytebytego.com/guides/cloud-comparison-cheat-sheet/)
