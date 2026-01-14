@@ -27,7 +27,7 @@
   - [IT Diagrams](https://github.com/earkevin11/IT-Diagrams/blob/main/README.md)
 - <b> Kubernetes Crash Course </b>
   - [Learning about Kubernetes](https://github.com/earkevin11/Kubernetes-Crash-Course)
-- <b> Azure Container Apps (ACAs) and Azure Container Instances (ACIs) and Azure Container Registries (ACRs) Crash Course </b>
+- <b> Understanding Containers and Container Security </b>
   - [Understanding differences between Container Apps and Container Instances](https://github.com/earkevin11/Container-Apps-Container-Instances-Container-Registries)
   
   
