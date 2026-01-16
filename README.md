@@ -1,5 +1,5 @@
 <h1><a>Cybersecurity Professional </a> 
-<br> - Cloud Security (Azure & AWS) and Frontend Development (React)</br></h1>
+<br> - Cloud Security Engineer/Architect (Azure & AWS)</br></h1>
 
   <h2> ⚡ Software Development Projects </h2>
   
