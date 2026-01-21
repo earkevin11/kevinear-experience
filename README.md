@@ -13,7 +13,8 @@
   - [Bill Split Application](https://github.com/earkevin11/06-eat-n-split)
 
 <h2>👨‍💻 Cybersecurity and IT Notes </h2>
-
+- <b> Cloud Infrastructure and Platform Security <b> 
+  -[Securing cloud infrastructure vs cloud platforms](https://github.com/earkevin11/Cloud-IaaS-and-PaaS-Security)
 - <b>AZ-500: Microsoft Certified: Azure Security Engineer Associate</b>
   - [Azure Security Technologies](https://github.com/earkevin11/Azure-Security-Technologies)
 - <b>AWS Solutions Architect</b>
