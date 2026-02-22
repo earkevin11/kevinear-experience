@@ -14,8 +14,8 @@
 
 <h2>👨‍💻 Cybersecurity and IT Notes </h2>
 
-- <b>Kevin's Authored Cloud Security Documentation </b> 
-  - [Documented Cloud Security Knowledgebase](https://github.com/earkevin11/Kevin-s-Authored-Cloud-Security-Documentation)
+- <b>Cloud Security Projects and Documentation </b> 
+  - [Cloud Security Projects](https://github.com/earkevin11/Kevin-s-Authored-Cloud-Security-Documentation)
 - <b>Cloud Infrastructure and Platform Security </b> 
   - [Securing cloud infrastructure vs cloud platforms](https://github.com/earkevin11/Cloud-IaaS-and-PaaS-Security)
 - <b>AZ-500: Microsoft Certified: Azure Security Engineer Associate</b>
