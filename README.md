@@ -1,5 +1,4 @@
-<h1><a>Cybersecurity Professional </a> 
-<br> - Cloud Security Engineer/Architect (Azure & AWS)</br></h1>
+<h1><a> Projects and Experiences </a>
 
   <h2> ⚡ Software Development Projects </h2>
   
