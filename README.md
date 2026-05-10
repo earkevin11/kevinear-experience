@@ -17,7 +17,7 @@
   - [Cloud Security Projects](https://github.com/earkevin11/Kevin-s-Authored-Cloud-Security-Documentation)
 - <b>Enterprise Identity Architecture and Platform Security </b> 
   - [Securing cloud infrastructure vs cloud platforms](https://github.com/earkevin11/Cloud-IaaS-and-PaaS-Security)
-  - [AD DS - AD FS - Entra ID architecture](https://github.com/earkevin11/AD-DS-and-ADFS-Architecture/tree/main)
+  - [AD DS vs AD FS vs Entra ID architecture](https://github.com/earkevin11/AD-DS-and-ADFS-Architecture/tree/main)
 - <b>AZ-500: Microsoft Certified: Azure Security Engineer Associate</b>
   - [Azure Security Technologies](https://github.com/earkevin11/Azure-Security-Technologies)
 - <b>AWS Solutions Architect</b>
