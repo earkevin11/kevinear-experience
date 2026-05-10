@@ -15,8 +15,9 @@
 
 - <b>Cloud Security Projects and Documentation </b> 
   - [Cloud Security Projects](https://github.com/earkevin11/Kevin-s-Authored-Cloud-Security-Documentation)
-- <b>Cloud Infrastructure and Platform Security </b> 
+- <b>Identity Architecture and Platform Security </b> 
   - [Securing cloud infrastructure vs cloud platforms](https://github.com/earkevin11/Cloud-IaaS-and-PaaS-Security)
+  - [Active Directory Directory Service (AD DS) and ADFS architecture](https://github.com/earkevin11/AD-DS-and-ADFS-Architecture/tree/main)
 - <b>AZ-500: Microsoft Certified: Azure Security Engineer Associate</b>
   - [Azure Security Technologies](https://github.com/earkevin11/Azure-Security-Technologies)
 - <b>AWS Solutions Architect</b>
