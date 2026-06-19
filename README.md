@@ -20,9 +20,9 @@
   - [AD DS vs AD FS vs Entra ID architecture](https://github.com/earkevin11/AD-DS-and-ADFS-Architecture/tree/main)
 - <b>AZ-500: Microsoft Certified: Azure Security Engineer Associate</b>
   - [Azure Security Technologies](https://github.com/earkevin11/Azure-Security-Technologies)
- - <b>SC-300: Identity and Access Administrator</b>
-  - [Global Secure Access](SC-300-Identity-and-Access-Administrator/Global-Secure-Access.md)
-  - [Integrate on premises apps with Microsoft Entra App Proxy](https://github.com/earkevin11/Microsoft-Entra-Application-proxy-integration-with-on-premises-apps)
+- <b>SC-300: Identity and Access Administrator</b>
+  - [Identity and Access Admin Notes] (https://github.com/earkevin11/SC300-Identity-and-Access-Administrator-Notes/blob/main/README.md) 
+
 - <b>AWS Solutions Architect</b>
   - [AWS Solutions Architect](https://github.com/earkevin11/AWS-Solutions-Architect)
 - <b>AWS Security Specialty</b>
