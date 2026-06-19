@@ -200,24 +200,6 @@ Portal steps (recommended):
 8. Session controls → Sign-in frequency or Persistent browser session: configure per policy.  
 9. Enable policy in report-only first, review sign-ins, then turn on.
 
-Example (pseudo-JSON for clarity — verify in your tenant and Graph API docs before automating):
-{
-  "displayName": "GSA - Remote App Access",
-  "state": "enabled",
-  "assignments": {
-    "users": { "includeGroups": ["HR-app-users"] },
-    "cloudApps": { "include": ["<app-id-or-name>"] }
-  },
-  "conditions": {
-    "locations": { "exclude": ["TrustedCorpIPs"] },
-    "clientAppTypes": { "include": ["browser","mobileAppsAndDesktopClients"] }
-  },
-  "grantControls": {
-    "operator": "AND",
-    "builtInControls": ["mfa","requireDeviceCompliance"]
-  },
-  "sessionControls": { "signInFrequency": { "value": 8, "type": "hours" } }
-}
 
 Notes:
 - Test in **Report-only** mode first.  
@@ -230,7 +212,7 @@ TL;DR: Create a policy that targets the app and user group, requires **MFA + dev
 
 ## 11. Architecture diagrams — GSA vs VPN
 
-### ASCII: GSA branch-office + remote user
+### GSA branch-office + remote user
 ```
                     Microsoft Entra / Global Secure Access
                                |        ▲
@@ -246,7 +228,7 @@ TL;DR: Create a policy that targets the app and user group, requires **MFA + dev
 ```
 **Summary:** This diagram shows a GSA deployment where **Entra evaluates identity and policies** before instructing an on‑prem **connector** to forward approved sessions to internal apps. Remote users authenticate to Entra (MFA/device posture) and device tunnels or browser sessions are proxied only for authorized resources, limiting exposure compared to broad network access.
 
-### ASCII: VPN-based architecture (traditional)
+### VPN-based architecture (traditional)
 ```
                 Corporate Network Perimeter / VPN Concentrator
                                  ▲
