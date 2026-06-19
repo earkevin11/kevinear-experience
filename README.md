@@ -21,7 +21,7 @@
 - <b>AZ-500: Microsoft Certified: Azure Security Engineer Associate</b>
   - [Azure Security Technologies](https://github.com/earkevin11/Azure-Security-Technologies)
 - <b>SC-300: Identity and Access Administrator</b>
-  - [Identity and Access Admin Notes] (https://github.com/earkevin11/SC300-Identity-and-Access-Administrator-Notes/blob/main/README.md) 
+  - [Identity and Access Admin Notes](https://github.com/earkevin11/SC300-Identity-and-Access-Administrator-Notes/blob/main/README.md) 
 
 - <b>AWS Solutions Architect</b>
   - [AWS Solutions Architect](https://github.com/earkevin11/AWS-Solutions-Architect)
