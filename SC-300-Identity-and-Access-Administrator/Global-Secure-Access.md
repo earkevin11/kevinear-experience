@@ -23,7 +23,7 @@
 
 **Global Secure Access (GSA)** is a Microsoft Entra capability that provides identity-driven, conditional access to resources across cloud and on-premises networks. It enables fine-grained, policy-based access and reduces reliance on broad **VPNs**.
 
-TL;DR: GSA uses **identity as the control plane** to secure access to apps and resources across network boundaries — instead of relying on network-perimeter controls (like VPNs) that grant broad network access to everything behind the tunnel.
+TL;DR: GSA uses **identity as the control plane** to secure access to apps and resources across network boundaries — instead of relying on network-perimeter controls (like VPNs) that grant broad network access to everything behind the tunnel. It creates a secure site-to-site connection between a branch office firewall and Microsoft's Global Secure Access cloud so users in that office can be governed by Entra security policies without needing the client installed on every device.
 
 ## Example Architecture
 
