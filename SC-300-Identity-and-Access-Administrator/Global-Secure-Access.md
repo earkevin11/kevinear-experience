@@ -102,7 +102,7 @@ TL;DR: Remember **connectors**, **Conditional Access**, **session controls**, an
 
 ## 8. Practical scenarios and examples
 
-I pruned the scenarios to the most commonly used cases and emphasized why companies choose GSA and the benefits.
+Most commonly used cases and emphasized why companies choose GSA and the benefits.
 
 1) Remote employee access to internal apps (most common)
 - Problem: VPN gives broad network access and poor UX.  
