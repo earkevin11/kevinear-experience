@@ -242,36 +242,6 @@ TL;DR: Create a policy that targets the app and user group, requires **MFA + dev
 ```
 **Summary:** This traditional VPN diagram shows that once a VPN **tunnel** is established, the remote device is effectively placed onto the corporate LAN and can reach internal resources permitted by network routing and firewall rules. This model often results in **network-level trust** that grants broad access and increases lateral movement risk.
 
-### PlantUML: GSA flow (copy to PlantUML editor)
-@startuml
-title GSA — Branch + Remote User
-node "Remote User\n(Browser / Device)" as User
-node "Entra / Control Plane" as Entra
-node "Connector\n(Branch Office)\nOutbound TLS" as Connector
-node "Internal App(s)\n(Datacenter / VNet)" as App
-node "Microsoft 365" as M365
-
-User --> Entra : Sign-in / Conditional Access
-Entra --> Connector : Approve & instruct forwarding
-User --> Connector : Device tunnel / proxied traffic
-Connector --> App : Forward approved session
-Entra --> M365 : Cloud services (SSO, policies)
-@enduml
-
-**Summary:** The PlantUML GSA flow illustrates the same concept in a sequence: user authenticates to **Entra**, **Conditional Access** evaluates the request, Entra instructs the **connector** to proxy the session, and the connector forwards traffic only to the mapped internal app. This enforces per-resource access controls.
-
-### PlantUML: VPN flow (copy to PlantUML editor)
-@startuml
-title VPN — Branch + Remote User
-node "Remote User\n(Browser / Device)" as User
-node "VPN Gateway / Concentrator" as VPNGW
-node "Internal App(s)\n(Datacenter / VNet)" as App
-User --> VPNGW : Authenticate & establish tunnel
-VPNGW --> App : Route traffic into corporate LAN
-@enduml
-
-**Summary:** The PlantUML VPN flow emphasizes the VPN gateway establishing a tunnel that routes traffic into the corporate LAN — once up, the client can reach internal apps based on network routing/firewall rules, rather than per-app identity checks.
-
 TL;DR: GSA places **identity and policy** at the center and proxies sessions per resource via connectors; VPN places users onto the corporate network where network-level trust often yields broad access.
 
 ---
