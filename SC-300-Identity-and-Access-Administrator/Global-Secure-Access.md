@@ -9,13 +9,16 @@
 1. [Overview — Read This First](#1-overview--read-this-first)  
 2. [What is Global Secure Access?](#2-what-is-global-secure-access)  
 3. [Remote networks — How they work](#3-remote-networks--how-they-work)  
-4. [When and why you would use Global Secure Access](#4-when-and-why-you-would-use-global-secure-access)  
-5. [What GSA replaces or complements](#5-what-gsa-replaces-or-complements)  
-6. [Create and configure remote networks (high-level)](#6-create-and-configure-remote-networks-high-level)  
-7. [Key concepts and components](#7-key-concepts-and-components)  
-8. [Practical scenarios and examples](#8-practical-scenarios-and-examples)  
-9. [Resources and further reading](#9-resources-and-further-reading)  
-10. [Glossary](#10-glossary)
+4. [How VPNs and network-perimeter controls work](#4-how-vpns-and-network-perimeter-controls-work)
+5. [When and why you would use Global Secure Access](#5-when-and-why-you-would-use-global-secure-access)  
+6. [What GSA replaces or complements](#6-what-gsa-replaces-or-complements)  
+7. [Create and configure remote networks (high-level)](#7-create-and-configure-remote-networks-high-level)  
+8. [Key concepts and components](#8-key-concepts-and-components)  
+9. [Practical scenarios and examples](#9-practical-scenarios-and-examples)  
+10. [Sample Conditional Access policy](#10-sample-conditional-access-policy)
+11. [Architecture diagrams — GSA vs VPN](#11-architecture-diagrams--gsa-vs-vpn)
+12. [Resources and further reading](#12-resources-and-further-reading)  
+13. [Glossary](#13-glossary)
 
 ---
 
@@ -23,21 +26,7 @@
 
 **Global Secure Access (GSA)** is a Microsoft Entra capability that provides identity-driven, conditional access to resources across cloud and on-premises networks. It enables fine-grained, policy-based access and reduces reliance on broad **VPNs**.
 
-TL;DR: GSA uses **identity as the control plane** to secure access to apps and resources across network boundaries — instead of relying on network-perimeter controls (like VPNs) that grant broad network access to everything behind the tunnel. It creates a secure site-to-site connection between a branch office firewall and Microsoft's Global Secure Access cloud so users in that office can be governed by Entra security policies without needing the client installed on every device.
-
-## Example Architecture
-
-                    Microsoft Entra / Global Secure Access
-                               |        ▲
-          ---------------------------------------------
-          |                                           |
-      Branch Office                             Remote User
-          |                                           |
-      Corporate Firewall                         Browser / Device
-          |                                           |
-       Connector (outbound TLS)                 GSA Client / Device Tunnel
-          |                                           |
-    Internal App(s)  <------  Entra Control Plane  ------>  Microsoft 365
+TL;DR: GSA uses **identity as the control plane** to secure access to apps and resources across network boundaries — instead of relying on network-perimeter controls (like VPNs) that grant broad network access to everything behind the tunnel.
 
 ---
 
@@ -52,15 +41,65 @@ TL;DR: GSA enforces **Conditional Access** and **session controls** for resource
 
 ## 3. Remote networks — How they work
 
-- Administrators register a **remote network** and associate one or more **connectors/gateways**.  
-- Connectors run locally and create outbound TLS tunnels to the Entra control plane (no inbound ports needed).  
-- Entra evaluates identity and device posture; approved sessions are proxied or tunneled to the resource.
+**What is a remote network?**
+- A **remote network** is any network that hosts resources accessed by users but is not the user's immediate endpoint network. Typical examples:
+  - An **on‑prem datacenter** or branch office subnet hosting internal web apps, file servers, or APIs.
+  - A **private VNet** in the cloud (Azure, AWS) that contains line-of-business services.
+  - A partner-managed network segment or co-lo environment where company apps run.
+  - Environments behind a corporate firewall reachable through a connector or gateway.
 
-TL;DR: **Connectors** create outbound tunnels so identity-driven policies are applied before traffic reaches internal resources — instead of opening inbound firewall ports or exposing services directly to the internet.
+**Essential properties of remote networks**
+- Hosts resources that are not publicly published and require controlled access.
+- Has local infrastructure capable of running a **connector/gateway** (VM or appliance) or allowing a connector to reach internal resources.
+- Supports outbound TLS connections to the Entra control plane (no inbound firewall holes required).
+
+**How remote networks integrate with GSA**
+1. Register the remote network in Entra and associate one or more **connectors**.  
+2. Deploy connectors/gateways in the network; they establish outbound, **TLS-encrypted** tunnels to Microsoft.  
+3. Map internal resources (hostnames/IPs) to the remote network in Entra so Entra knows where to forward approved traffic.  
+4. Create **Conditional Access** and session policies scoped to those resources and users.  
+5. When a user requests access, Entra evaluates identity and device posture; approved sessions are proxied/tunneled via the connector to the target.
+
+**Security and operational considerations**
+- **Outbound-only connectors**: avoid opening inbound firewall ports; connectors initiate secure outbound connections.  
+- **DNS & routing**: ensure connectors can resolve and route to target resources; consider split-horizon DNS.  
+- **High availability**: deploy multiple connectors for redundancy and scale.  
+- **Logging & monitoring**: enable connector logs and Entra sign-in/session logs for audit and incident response.  
+- **Least privilege**: map only the required apps/services, not entire subnets, to minimize the attack surface.
+
+TL;DR: **Remote networks** are on‑prem or private cloud segments that host private resources; GSA uses **connectors** to establish outbound tunnels so Entra can apply identity‑driven policies before traffic reaches those resources — instead of exposing services or relying on broad VPN access.
 
 ---
 
-## 4. When and why you would use Global Secure Access
+## 4. How VPNs and network-perimeter controls work
+
+This section explains VPNs and perimeter-based trust in plain language for someone new to networking.
+
+What is a VPN?
+- A **VPN (Virtual Private Network)** creates an encrypted tunnel between a user's device (or a remote site) and a corporate network so the remote endpoint appears to be on the corporate network. Think of the VPN tunnel as a private pipe from the user into the company network.
+
+How access decisions are typically made with a VPN
+- When a user connects via VPN, the network authenticates the connection (often with username/password, certificates, or an MFA step). Once the tunnel is established, the user's traffic is sent into the corporate network.
+- Most traditional VPN setups rely on **network-perimeter controls**: once the tunnel is open, the user inherits network-level access. The VPN assumes the user is trusted and grants access to whatever resources the network allows the user's IP to reach.
+
+Does the VPN automatically allow access to everything?
+- Short answer: Not always, but often yes in practice. In many organizations, the VPN places the client on the corporate subnet or assigns an IP that is allowed to reach many internal services. Access to specific apps may still be controlled by application-level checks, but the VPN commonly removes network restrictions, enabling broad lateral access by default.
+- This is why VPNs are sometimes called "broad access" solutions: they move the user behind the corporate firewall where network-level trust is high.
+
+Limitations and risks of perimeter-based VPN trust
+- **Broad attack surface**: a compromised device with VPN access can reach many systems — more opportunity for lateral movement.  
+- **Coarse trust model**: the network trusts the tunnel, not the identity or device posture of the user for each app.  
+- **Operational overhead**: scaling VPN concentrators, managing IP pools, and maintaining firewall rules is complex and costly.  
+- **Poor UX**: VPNs can be slow, require client software, and create friction for users.
+
+Why companies are moving away from pure perimeter/VPN trust
+- Organizations want **least-privilege**, identity-based access that enforces MFA, device posture, and per-app policies — not an all-or-nothing tunnel. GSA enables these controls so access is granted per resource based on identity and signals, rather than because the user is "on the network."
+
+TL;DR: A VPN creates an encrypted tunnel that can place a user inside the corporate network; once connected, many organizations implicitly trust that connection and allow broad access — instead of evaluating access per app based on identity, device posture, and risk.
+
+---
+
+## 5. When and why you would use Global Secure Access
 
 When:
 - Secure internal apps without public exposure.  
@@ -78,7 +117,7 @@ TL;DR: Use GSA to apply identity- and policy-based controls and avoid exposing i
 
 ---
 
-## 5. What GSA replaces or complements
+## 6. What GSA replaces or complements
 
 - Replaces broad **VPNs** for many scenarios.  
 - Complements or replaces legacy reverse proxies (WAP) and **Entra Application Proxy** depending on needs.  
@@ -88,7 +127,7 @@ TL;DR: GSA reduces reliance on network-level trust and emphasizes **identity-dri
 
 ---
 
-## 6. Create and configure remote networks (high-level)
+## 7. Create and configure remote networks (high-level)
 
 Steps (summary):
 1. Plan scope: subnets/resources to expose.  
@@ -102,7 +141,7 @@ TL;DR: Plan → deploy connectors → register → apply policies → test — i
 
 ---
 
-## 7. Key concepts and components
+## 8. Key concepts and components
 
 - **Connector / Gateway**: outbound TLS tunnel and traffic forwarder.  
 - **Remote network**: on-prem or private network registered with Entra.  
@@ -114,9 +153,9 @@ TL;DR: Remember **connectors**, **Conditional Access**, **session controls**, an
 
 ---
 
-## 8. Practical scenarios and examples
+## 9. Practical scenarios and examples
 
-Most commonly used cases and emphasized why companies choose GSA and the benefits.
+I pruned the scenarios to the most commonly used cases and emphasized why companies choose GSA and the benefits.
 
 1) Remote employee access to internal apps (most common)
 - Problem: VPN gives broad network access and poor UX.  
@@ -146,7 +185,110 @@ TL;DR: These four scenarios—remote employees, partner/B2B, zero-trust segmenta
 
 ---
 
-## 9. Resources and further reading
+## 10. Sample Conditional Access policy
+
+Below is a concise, practical example you can implement in the Entra portal for the "Remote app access" scenario. Use this as a template and tailor to your organization's user groups and apps.
+
+Portal steps (recommended):
+1. Sign in to the Azure portal → Entra ID → Security → Conditional Access → New policy.  
+2. Name: **GSA - Remote App Access**.  
+3. Assignments → Users: select the target user group (e.g., "All employees" or "HR-app-users").  
+4. Cloud apps: select the published internal app (or the enterprise app representing it).  
+5. Conditions → Locations: exclude trusted corporate IPs (if applicable).  
+6. Conditions → Device platforms / Client apps: configure as needed (block legacy auth).  
+7. Access controls → Grant: **Require multi-factor authentication** AND **Require device to be marked compliant**.  
+8. Session controls → Sign-in frequency or Persistent browser session: configure per policy.  
+9. Enable policy in report-only first, review sign-ins, then turn on.
+
+Example (pseudo-JSON for clarity — verify in your tenant and Graph API docs before automating):
+{
+  "displayName": "GSA - Remote App Access",
+  "state": "enabled",
+  "assignments": {
+    "users": { "includeGroups": ["HR-app-users"] },
+    "cloudApps": { "include": ["<app-id-or-name>"] }
+  },
+  "conditions": {
+    "locations": { "exclude": ["TrustedCorpIPs"] },
+    "clientAppTypes": { "include": ["browser","mobileAppsAndDesktopClients"] }
+  },
+  "grantControls": {
+    "operator": "AND",
+    "builtInControls": ["mfa","requireDeviceCompliance"]
+  },
+  "sessionControls": { "signInFrequency": { "value": 8, "type": "hours" } }
+}
+
+Notes:
+- Test in **Report-only** mode first.  
+- Use **named locations** and **device compliance** signals to avoid locking out legitimate users.  
+- Consider excluding emergency break-glass accounts from Conditional Access, but protect those accounts with strict audits and short lifetimes.
+
+TL;DR: Create a policy that targets the app and user group, requires **MFA + device compliance**, and test in report-only before enabling — instead of granting access based solely on network presence (VPN/IP).
+
+---
+
+## 11. Architecture diagrams — GSA vs VPN
+
+### ASCII: GSA branch-office + remote user
+```
+                    Microsoft Entra / Global Secure Access
+                               |        ▲
+          ---------------------------------------------
+          |                                           |
+      Branch Office                             Remote User
+          |                                           |
+      Firewall                                  GSA Client
+          |                                           |
+       Connector                                 Device Tunnel
+          |                                           |
+    Internal App(s)  <------  Entra Control Plane  ------>  Microsoft 365
+```
+
+### ASCII: VPN-based architecture (traditional)
+```
+                Corporate Network Perimeter / VPN Concentrator
+                                 ▲
+                ----------------- | ------------------
+                |                                   |
+           Branch Office                         Remote User
+                |                                    |
+         Internal App(s) <-- Firewall/LAN --> VPN Gateway (tunnel)
+                |                                    |
+            On-prem resources                   VPN Client (tunnel)
+```
+
+### PlantUML: GSA flow (copy to PlantUML editor)
+@startuml
+title GSA — Branch + Remote User
+node "Remote User\n(Browser / Device)" as User
+node "Entra / Control Plane" as Entra
+node "Connector\n(Branch Office)\nOutbound TLS" as Connector
+node "Internal App(s)\n(Datacenter / VNet)" as App
+node "Microsoft 365" as M365
+
+User --> Entra : Sign-in / Conditional Access
+Entra --> Connector : Approve & instruct forwarding
+User --> Connector : Device tunnel / proxied traffic
+Connector --> App : Forward approved session
+Entra --> M365 : Cloud services (SSO, policies)
+@enduml
+
+### PlantUML: VPN flow (copy to PlantUML editor)
+@startuml
+title VPN — Branch + Remote User
+node "Remote User\n(Browser / Device)" as User
+node "VPN Gateway / Concentrator" as VPNGW
+node "Internal App(s)\n(Datacenter / VNet)" as App
+User --> VPNGW : Authenticate & establish tunnel
+VPNGW --> App : Route traffic into corporate LAN
+@enduml
+
+TL;DR: GSA places **identity and policy** at the center and proxies sessions per resource via connectors; VPN places users onto the corporate network where network-level trust often yields broad access.
+
+---
+
+## 12. Resources and further reading
 
 - Microsoft Learn: Deploy and configure Microsoft Entra Global Secure Access — Create remote networks  
   https://learn.microsoft.com/en-us/training/modules/deploy-configure-microsoft-entra-global-secure-access/6-create-remote-networks  
@@ -157,7 +299,7 @@ TL;DR: Start with the Microsoft Learn module and official docs — instead of re
 
 ---
 
-## 10. Glossary
+## 13. Glossary
 
 - **GSA** — Global Secure Access  
 - **Connector** — software that connects a remote network to Entra  
