@@ -76,7 +76,7 @@ TL;DR: **Remote networks** are on‑prem or private cloud segments that host pri
 This section explains VPNs and perimeter-based trust in plain language for someone new to networking.
 
 What is a VPN?
-- A **VPN (Virtual Private Network)** creates an encrypted tunnel between a user's device (or a remote site) and a corporate network so the remote endpoint appears to be on the corporate network. Think of the VPN tunnel as a private pipe from the user into the company network.
+- A **VPN (Virtual Private Network)** creates an encrypted tunnel between a user's device (or a remote site) and a corporate network so the remote endpoint appears to be on the corporate network. Think of the VPN tunnel as a private pipe from the user into the company.
 
 How access decisions are typically made with a VPN
 - When a user connects via VPN, the network authenticates the connection (often with username/password, certificates, or an MFA step). Once the tunnel is established, the user's traffic is sent into the corporate network.
@@ -181,7 +181,7 @@ I pruned the scenarios to the most commonly used cases and emphasized why compan
 - Company benefits: better security hygiene, fewer standing credentials, and faster CI/CD workflows.  
 - Quick steps: map dev resources → create policies for dev groups and compliant devices → enforce session limits and logging.
 
-TL;DR: These four scenarios—remote employees, partner/B2B, zero-trust segmentation, and developer workflows—cover the most common business drivers for adopting GSA: **reduce attack surface, centralize policy, improve UX, and lower operational cost** — instead of continuing with broad VPN access and static network trust.
+TL;DR: These four scenarios—remote employees, partner/B2B, zero-trust segmentation, and developer workflows—cover the most common business drivers for adopting GSA: **reduce attack surface, c[...]
 
 ---
 
@@ -244,6 +244,7 @@ TL;DR: Create a policy that targets the app and user group, requires **MFA + dev
           |                                           |
     Internal App(s)  <------  Entra Control Plane  ------>  Microsoft 365
 ```
+**Summary:** This diagram shows a GSA deployment where **Entra evaluates identity and policies** before instructing an on‑prem **connector** to forward approved sessions to internal apps. Remote users authenticate to Entra (MFA/device posture) and device tunnels or browser sessions are proxied only for authorized resources, limiting exposure compared to broad network access.
 
 ### ASCII: VPN-based architecture (traditional)
 ```
@@ -257,6 +258,7 @@ TL;DR: Create a policy that targets the app and user group, requires **MFA + dev
                 |                                    |
             On-prem resources                   VPN Client (tunnel)
 ```
+**Summary:** This traditional VPN diagram shows that once a VPN **tunnel** is established, the remote device is effectively placed onto the corporate LAN and can reach internal resources permitted by network routing and firewall rules. This model often results in **network-level trust** that grants broad access and increases lateral movement risk.
 
 ### PlantUML: GSA flow (copy to PlantUML editor)
 @startuml
@@ -274,6 +276,8 @@ Connector --> App : Forward approved session
 Entra --> M365 : Cloud services (SSO, policies)
 @enduml
 
+**Summary:** The PlantUML GSA flow illustrates the same concept in a sequence: user authenticates to **Entra**, **Conditional Access** evaluates the request, Entra instructs the **connector** to proxy the session, and the connector forwards traffic only to the mapped internal app. This enforces per-resource access controls.
+
 ### PlantUML: VPN flow (copy to PlantUML editor)
 @startuml
 title VPN — Branch + Remote User
@@ -283,6 +287,8 @@ node "Internal App(s)\n(Datacenter / VNet)" as App
 User --> VPNGW : Authenticate & establish tunnel
 VPNGW --> App : Route traffic into corporate LAN
 @enduml
+
+**Summary:** The PlantUML VPN flow emphasizes the VPN gateway establishing a tunnel that routes traffic into the corporate LAN — once up, the client can reach internal apps based on network routing/firewall rules, rather than per-app identity checks.
 
 TL;DR: GSA places **identity and policy** at the center and proxies sessions per resource via connectors; VPN places users onto the corporate network where network-level trust often yields broad access.
 
