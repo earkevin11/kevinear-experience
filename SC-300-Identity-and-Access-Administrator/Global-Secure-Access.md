@@ -25,6 +25,20 @@
 
 TL;DR: GSA uses **identity as the control plane** to secure access to apps and resources across network boundaries — instead of relying on network-perimeter controls (like VPNs) that grant broad network access to everything behind the tunnel.
 
+## Example Architecture
+
+                    Microsoft Entra / Global Secure Access
+                               |        ▲
+          ---------------------------------------------
+          |                                           |
+      Branch Office                             Remote User
+          |                                           |
+      Corporate Firewall                         Browser / Device
+          |                                           |
+       Connector (outbound TLS)                 GSA Client / Device Tunnel
+          |                                           |
+    Internal App(s)  <------  Entra Control Plane  ------>  Microsoft 365
+
 ---
 
 ## 2. What is Global Secure Access?
