@@ -32,8 +32,11 @@
 - <b> Understanding Containers and Container Security </b>
   - [Understanding differences between Container Apps and Container Instances](https://github.com/earkevin11/Container-Apps-Container-Instances-Container-Registries)
   - [Container Security](https://github.com/earkevin11/Container-Security)
+
+- <b>SC-300: Identity and Access Administrator</b>
+  - [Global Secure Access](SC-300-Identity-and-Access-Administrator/Global-Secure-Access.md)
   
-  
+
 
 <h2>📺 Certifications and Training </h2>
   
@@ -54,19 +57,3 @@
   - [Italki](https://www.italki.com/)
     - Affordable private tutoring from Native speakers
     - Multiple language offered including English, Spanish, Mandarin, Russian, and more
- 
-
-<!--
-**joshmadakor1/joshmadakor1** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
