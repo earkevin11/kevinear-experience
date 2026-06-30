@@ -14,7 +14,7 @@
 <h2>👨‍💻 Cybersecurity and IT Notes </h2>
 
 - <b>Microsoft Entra Agent ID</b>
-- [Understanding Microsoft Entra Agent ID and Securing Agent ID](https://github.com/earkevin11/Microsoft-Entra-Agent-ID)
+  - [Understanding Microsoft Entra Agent ID and Securing Agent ID](https://github.com/earkevin11/Microsoft-Entra-Agent-ID)
 - <b>Cloud Security Projects and Documentation </b> 
   - [Cloud Security Projects](https://github.com/earkevin11/Kevin-s-Authored-Cloud-Security-Documentation)
 - <b>Enterprise Identity Architecture and Platform Security </b> 
