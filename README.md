@@ -15,7 +15,7 @@
 
 - <b> Microsoft Entra Agent ID </b>
   - [Understanding Microsoft Entra Agent ID](https://github.com/earkevin11/Microsoft-Entra-Agent-ID)
-  - (Security and Governance for Agents)(https://github.com/earkevin11/Security-and-Governance-for-Agents)
+  - [Security and Governance for Agents](https://github.com/earkevin11/Security-and-Governance-for-Agents)
 - <b>Cloud Security Projects and Documentation </b> 
   - [Cloud Security Projects](https://github.com/earkevin11/Kevin-s-Authored-Cloud-Security-Documentation)
 - <b>Enterprise Identity Architecture and Platform Security </b> 
