@@ -18,6 +18,8 @@
   - [Security and Governance for Agents](https://github.com/earkevin11/Security-and-Governance-for-Agents)
 - <b>Cloud Security Projects and Documentation </b> 
   - [Cloud Security Projects](https://github.com/earkevin11/Kevin-s-Authored-Cloud-Security-Documentation)
+- <b>Cloud Security Assessments </b> 
+  - [Security Assessments for Cloud and AI Solutions](https://github.com/earkevin11/Security-Assessments-for-Cloud-and-AI-solutions)
 - <b>Enterprise Identity Architecture and Platform Security </b> 
   - [Securing cloud infrastructure vs cloud platforms](https://github.com/earkevin11/Cloud-IaaS-and-PaaS-Security)
   - [AD DS vs AD FS vs Entra ID architecture](https://github.com/earkevin11/AD-DS-and-ADFS-Architecture/tree/main)
