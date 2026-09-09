@@ -23,6 +23,7 @@
 - <b>Enterprise Identity Architecture and Platform Security </b> 
   - [Cloud infrastructure vs cloud platforms](https://github.com/earkevin11/Cloud-IaaS-and-PaaS-Security)
   - [AD DS vs AD FS vs Entra ID architecture](https://github.com/earkevin11/AD-DS-and-ADFS-Architecture/tree/main)
+  - [Understanding Federated Credentials]()
 - <b>AZ-500: Microsoft Certified: Azure Security Engineer Associate</b>
   - [Azure Security Technologies](https://github.com/earkevin11/Azure-Security-Technologies)
 - <b>SC-300: Identity and Access Administrator</b>
