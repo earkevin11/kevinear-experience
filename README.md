@@ -30,7 +30,7 @@
 - <b>SC-300: Identity and Access Administrator</b>
   - [Identity and Access Admin Notes](https://github.com/earkevin11/SC300-Identity-and-Access-Administrator-Notes/blob/main/README.md)
 - <b>SC-500: Cloud and AI Security Engineer</b>
-  - [Cloud and AI Security Engineer Notes]() 
+  - [Cloud and AI Security Engineer Notes](https://github.com/earkevin11/Cloud-and-AI-Security-Engineer-Notes) 
 - <b>AWS Solutions Architect</b>
   - [AWS Solutions Architect](https://github.com/earkevin11/AWS-Solutions-Architect)
 - <b>AWS Security Specialty</b>
