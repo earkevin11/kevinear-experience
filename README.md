@@ -13,7 +13,7 @@
 
 <h2>👨‍💻 Cybersecurity and IT Notes </h2>
 
-- <b> Microsoft Entra Agent ID </b>
+- <b> Agentic AI Security </b>
   - [Understanding Microsoft Entra Agent ID](https://github.com/earkevin11/Microsoft-Entra-Agent-ID)
   - [Security and Governance for Agents](https://github.com/earkevin11/Security-and-Governance-for-Agents)
   - [Microsoft Entra Agent Idenities vs Agents from Agent 365 Admin Center](https://github.com/earkevin11/Microsoft-Entra-Agent-Identities-vs-Agents-within-Agent-365-Admin-Center)
